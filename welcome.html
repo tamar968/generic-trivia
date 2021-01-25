@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="style/theme1.css" rel="stylesheet" />
+    <link href="style/Instroduction.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            --main-font-size: 45px;
+            --main-line-height: 46px;
+        }
+
+        .instrodaction {
+            text-align: center;
+        }
+        #allContent{
+            display:none;
+            width:100vw;
+            height:90vh;
+
+        }
+    </style>
+    <script>
+        function finishLoading() {
+            document.getElementById('allContent').style.display= 'block';
+            document.getElementById('loading').style.display = 'none';
+        }
+    </script>
+</head>
+<body dir="rtl" onload="finishLoading()">
+    <div id="allContent" hidden>
+        <div class="mainWrap">
+            <div class="instrodaction">
+                <h1>הוראות למשחק טריוויה</h1>
+                על המסך מופיעות שאלות,<br />
+                לכל שאלה 3 תשובות אפשריות, כשרק אחת מהן נכונה.
+                <br />
+                עליך לבחור בתשובה הנכונה.
+                ע”י שריקה במשרוקית.
+                <br />
+                אם התשובה היא 1: שרוק שריקה אחת.
+                <br />
+                אם התשובה 2: שרוק שתי שריקות.
+                <br />
+                אם התשובה 3: שרוק שלוש שריקות.
+                <div><a href="HtmlPage.html" class="continue">הבנו, אפשר להמשיך</a></div>
+            </div>
+            <div class="logo">
+                <img src="pictures/TSH-logo.png" />
+            </div>
+        </div>
+        <p class="tsh-developer">
+            <!--<img src="pictures/TSH-logo.png" alt="TSH-0556796880" />-->
+            <span>&#169 TSH</span> 0556796880
+        </p>
+    </div>
+    <div id="loading" style="text-align:center">
+        רק רגע, אנחנו מכינים כל מה שצריך
+    </div>
+</body>
+</html>

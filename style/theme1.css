@@ -1,0 +1,68 @@
+﻿:root {
+    --app-primary-color: #856b4e;
+    --app-secondry-color: #943704;
+    --main-bg-color: #ffffff;
+    --main-text-color: #130505;
+    --main-font-size: 95px;
+    --main-line-height: 98px;
+    --main-bg-img: url(../pictures/pexels-olya-kobruseva-5428836.jpg);
+    --app-width: 1000px;
+    --btn-bg-color: #c19f68;
+    --stat-bar-dark: #dfccc5;
+    --stat-bar-light: #b34b35;
+}
+/*-webkit-linear-gradient(bottom, #9a3110 0%, #9a3110 35%, #b34b35 70%,#b34b35 100%)*/
+body {
+    background-color: var(--btn-bg-color);
+    font-family: FbBokertov-Regular;
+    margin: 0;
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
+    color: var(--main-text-color);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+    body:before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: -10;
+        background-image: var(--main-bg-img);
+        transform: scaleX(-1) scaleY(-1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+@font-face {
+    font-family: 'FbBokertov-Regular';
+    src: url('fonts/FbBokertov-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FbBokertov-Bold';
+    src: url('fonts/FbBokertov-Bold.otf') format('opentype');
+}
+
+h1, h2, h3, h4, h4, h5 {
+    font-family: FbBokertov-Bold;
+    margin: 0;
+    padding: 2rem;
+    text-shadow: 0 0 10px white;
+}
+.max-app-width{
+    max-width:var(--app-width);
+    width:100%;
+    margin:auto;
+}
+.tsh-developer{
+    position:absolute;
+    z-index:100000;
+    font-size:27px;
+    left:-40px;
+    bottom:100px;
+    transform:rotate(-90deg);
+}
